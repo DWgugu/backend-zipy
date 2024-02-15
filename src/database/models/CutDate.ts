@@ -1,7 +1,7 @@
 import { BaseEntity, Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
 import { ClientInputModels } from "./index";
 
-@Entity({ name: 'zipy.cut_date' })
+@Entity({ name: 'cut_date' })
 export class CutDateModels extends BaseEntity {
     @PrimaryColumn()
     id?: number;

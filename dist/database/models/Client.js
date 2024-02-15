@@ -31,7 +31,7 @@ __decorate([
     __metadata("design:type", index_1.ClientInputModels)
 ], ClientModels.prototype, "clientInput", void 0);
 ClientModels = __decorate([
-    (0, typeorm_1.Entity)({ name: 'zipy.client' }),
+    (0, typeorm_1.Entity)({ name: 'client' }),
     __metadata("design:paramtypes", [String])
 ], ClientModels);
 exports.ClientModels = ClientModels;

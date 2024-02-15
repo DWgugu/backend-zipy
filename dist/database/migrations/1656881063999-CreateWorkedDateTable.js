@@ -5,7 +5,7 @@ const typeorm_1 = require("typeorm");
 class CreateWorkedDateTable1656881063999 {
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
-            name: "zipy.worked_date",
+            name: "worked_date",
             columns: [
                 {
                     name: "id",
@@ -43,19 +43,19 @@ class CreateWorkedDateTable1656881063999 {
             foreignKeys: [
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
-                    referencedTableName: "zipy.service",
+                    referencedTableName: "service",
                     columnNames: ["service_id"]
                 }),
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
-                    referencedTableName: "zipy.client_input",
+                    referencedTableName: "client_input",
                     columnNames: ["client_input_id"]
                 })
             ]
         }));
     }
     async down(queryRunner) {
-        await queryRunner.dropTable("zipy.worked_input");
+        await queryRunner.dropTable("worked_input");
     }
 }
 exports.CreateWorkedDateTable1656881063999 = CreateWorkedDateTable1656881063999;

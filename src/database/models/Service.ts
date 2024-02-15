@@ -1,7 +1,7 @@
 import { BaseEntity, Column, Entity, OneToMany, PrimaryColumn } from 'typeorm';
 import { WorkedDateModels } from './index';
 
-@Entity({ name: 'zipy.service' })
+@Entity({ name: 'service' })
 export class ServiceModels extends BaseEntity {
     @PrimaryColumn()
     id?: number;

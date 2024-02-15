@@ -5,7 +5,7 @@ const typeorm_1 = require("typeorm");
 class CreateCutDateTable1656878929686 {
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
-            name: "zipy.cut_date",
+            name: "cut_date",
             columns: [
                 {
                     name: "id",
@@ -28,7 +28,7 @@ class CreateCutDateTable1656878929686 {
         }));
     }
     async down(queryRunner) {
-        await queryRunner.dropTable("zipy.cut_date");
+        await queryRunner.dropTable("cut_date");
     }
 }
 exports.CreateCutDateTable1656878929686 = CreateCutDateTable1656878929686;

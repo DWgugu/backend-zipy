@@ -14,11 +14,11 @@ export default class GenerateXLSX {
                 u.users as usuario,
                 sum(wd.quantity) as quantidade,
                 sum(wd.piece_value * wd.quantity) as valor
-                from zipy.client_input ci
-                inner join zipy.cut_date cd on ci.cut_date_id = cd.id
-                inner join zipy.client c on ci.client_id = c.id
-                inner join zipy.users u on ci.user_id = u.id
-                inner join zipy.worked_date wd on wd.client_input_id = ci.id
+                from .client_input ci
+                inner join .cut_date cd on ci.cut_date_id = cd.id
+                inner join .client c on ci.client_id = c.id
+                inner join .users u on ci.user_id = u.id
+                inner join .worked_date wd on wd.client_input_id = ci.id
                 where cd.id = ${idCutDate} and u.id = ${idUser}
                 group by cd.id, cliente, usuario
             `)
@@ -45,11 +45,11 @@ export default class GenerateXLSX {
                 u.users as usuario,
                 sum(wd.quantity) as quantidade,
                 sum(wd.piece_value * wd.quantity) as valor
-                from zipy.client_input ci
-                inner join zipy.cut_date cd on ci.cut_date_id = cd.id
-                inner join zipy.client c on ci.client_id = c.id
-                inner join zipy.users u on ci.user_id = u.id
-                inner join zipy.worked_date wd on wd.client_input_id = ci.id
+                from .client_input ci
+                inner join .cut_date cd on ci.cut_date_id = cd.id
+                inner join .client c on ci.client_id = c.id
+                inner join .users u on ci.user_id = u.id
+                inner join .worked_date wd on wd.client_input_id = ci.id
                 where cd.id = ${idCutDate} and u.id = ${idUser}
                 group by cd.id, cliente, usuario
             `)

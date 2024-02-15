@@ -5,7 +5,7 @@ const typeorm_1 = require("typeorm");
 class CreateClientTable1656879191582 {
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
-            name: "zipy.client",
+            name: "client",
             columns: [
                 {
                     name: "id",
@@ -24,7 +24,7 @@ class CreateClientTable1656879191582 {
         }));
     }
     async down(queryRunner) {
-        await queryRunner.dropTable("zipy.client");
+        await queryRunner.dropTable("client");
     }
 }
 exports.CreateClientTable1656879191582 = CreateClientTable1656879191582;

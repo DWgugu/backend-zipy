@@ -36,7 +36,7 @@ __decorate([
     __metadata("design:type", index_1.ClientInputModels)
 ], CutDateModels.prototype, "clientInput", void 0);
 CutDateModels = __decorate([
-    (0, typeorm_1.Entity)({ name: 'zipy.cut_date' }),
+    (0, typeorm_1.Entity)({ name: 'cut_date' }),
     __metadata("design:paramtypes", [Date, Date])
 ], CutDateModels);
 exports.CutDateModels = CutDateModels;

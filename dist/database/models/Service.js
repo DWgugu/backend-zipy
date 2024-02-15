@@ -36,7 +36,7 @@ __decorate([
     __metadata("design:type", index_1.WorkedDateModels)
 ], ServiceModels.prototype, "workedDate", void 0);
 ServiceModels = __decorate([
-    (0, typeorm_1.Entity)({ name: 'zipy.service' }),
+    (0, typeorm_1.Entity)({ name: 'service' }),
     __metadata("design:paramtypes", [String, Number])
 ], ServiceModels);
 exports.ServiceModels = ServiceModels;

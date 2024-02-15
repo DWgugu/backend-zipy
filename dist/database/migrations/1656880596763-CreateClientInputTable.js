@@ -5,7 +5,7 @@ const typeorm_1 = require("typeorm");
 class CreateClientInputTable1656880596763 {
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
-            name: "zipy.client_input",
+            name: "client_input",
             columns: [
                 {
                     name: "id",
@@ -33,24 +33,24 @@ class CreateClientInputTable1656880596763 {
             foreignKeys: [
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
-                    referencedTableName: "zipy.cut_date",
+                    referencedTableName: "cut_date",
                     columnNames: ["cut_date_id"]
                 }),
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
-                    referencedTableName: "zipy.client",
+                    referencedTableName: "client",
                     columnNames: ["client_id"]
                 }),
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
-                    referencedTableName: "zipy.users",
+                    referencedTableName: "users",
                     columnNames: ["user_id"]
                 })
             ]
         }));
     }
     async down(queryRunner) {
-        await queryRunner.dropTable("zipy.client_input");
+        await queryRunner.dropTable("client_input");
     }
 }
 exports.CreateClientInputTable1656880596763 = CreateClientInputTable1656880596763;

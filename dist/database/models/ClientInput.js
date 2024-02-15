@@ -56,7 +56,7 @@ __decorate([
     __metadata("design:type", index_1.WorkedDateModels)
 ], ClientInputModels.prototype, "workedDate", void 0);
 ClientInputModels = __decorate([
-    (0, typeorm_1.Entity)({ name: 'zipy.client_input' }),
+    (0, typeorm_1.Entity)({ name: 'client_input' }),
     __metadata("design:paramtypes", [Number, Number, Number])
 ], ClientInputModels);
 exports.ClientInputModels = ClientInputModels;

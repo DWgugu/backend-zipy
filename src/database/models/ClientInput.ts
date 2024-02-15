@@ -1,7 +1,7 @@
 import { BaseEntity, Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryColumn } from 'typeorm';
 import { ClientModels, CutDateModels, UserModels, WorkedDateModels } from './index';
 
-@Entity({ name: 'zipy.client_input' })
+@Entity({ name: 'client_input' })
 export class ClientInputModels extends BaseEntity {
     @PrimaryColumn()
     id?: number;
