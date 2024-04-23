@@ -9,18 +9,18 @@ class CreateClientTable1656879191582 {
             columns: [
                 {
                     name: "id",
-                    type: "int",
+                    type: "uuid",
                     isPrimary: true,
                     isGenerated: true,
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "client",
                     type: "varchar",
                     length: "255",
-                    isNullable: false
-                }
-            ]
+                    isNullable: false,
+                },
+            ],
         }));
     }
     async down(queryRunner) {

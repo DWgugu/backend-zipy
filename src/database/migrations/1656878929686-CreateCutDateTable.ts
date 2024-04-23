@@ -8,7 +8,7 @@ export class CreateCutDateTable1656878929686 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "uuid",
+            type: "int",
             isPrimary: true,
             isGenerated: true,
             isNullable: false,

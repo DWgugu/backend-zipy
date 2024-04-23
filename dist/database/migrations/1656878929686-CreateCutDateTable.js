@@ -9,22 +9,22 @@ class CreateCutDateTable1656878929686 {
             columns: [
                 {
                     name: "id",
-                    type: "int",
+                    type: "uuid",
                     isPrimary: true,
                     isGenerated: true,
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "date_start",
                     type: "date",
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "date_end",
                     type: "date",
-                    isNullable: false
-                }
-            ]
+                    isNullable: false,
+                },
+            ],
         }));
     }
     async down(queryRunner) {

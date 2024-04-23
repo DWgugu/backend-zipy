@@ -9,10 +9,10 @@ class CreateServiceTable1656879805201 {
             columns: [
                 {
                     name: "id",
-                    type: "int",
+                    type: "uuid",
                     isPrimary: true,
                     isGenerated: true,
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "type",
@@ -23,9 +23,9 @@ class CreateServiceTable1656879805201 {
                 {
                     name: "piece_value",
                     type: "decimal",
-                    isNullable: false
-                }
-            ]
+                    isNullable: false,
+                },
+            ],
         }));
     }
     async down(queryRunner) {

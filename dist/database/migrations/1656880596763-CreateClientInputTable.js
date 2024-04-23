@@ -9,44 +9,44 @@ class CreateClientInputTable1656880596763 {
             columns: [
                 {
                     name: "id",
-                    type: "int",
+                    type: "uuid",
                     isPrimary: true,
                     isGenerated: true,
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "cut_date_id",
                     type: "int",
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "client_id",
                     type: "int",
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "user_id",
                     type: "int",
-                    isNullable: false
-                }
+                    isNullable: false,
+                },
             ],
             foreignKeys: [
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
                     referencedTableName: "cut_date",
-                    columnNames: ["cut_date_id"]
+                    columnNames: ["cut_date_id"],
                 }),
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
                     referencedTableName: "client",
-                    columnNames: ["client_id"]
+                    columnNames: ["client_id"],
                 }),
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
                     referencedTableName: "users",
-                    columnNames: ["user_id"]
-                })
-            ]
+                    columnNames: ["user_id"],
+                }),
+            ],
         }));
     }
     async down(queryRunner) {

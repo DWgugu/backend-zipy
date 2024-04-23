@@ -13,7 +13,7 @@ export class CreateWorkedDateTable1656881063999 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "uuid",
+            type: "int",
             isPrimary: true,
             isGenerated: true,
             isNullable: false,
@@ -35,12 +35,12 @@ export class CreateWorkedDateTable1656881063999 implements MigrationInterface {
           },
           {
             name: "service_id",
-            type: "int",
+            type: "uuid",
             isNullable: false,
           },
           {
             name: "client_input_id",
-            type: "int",
+            type: "uuid",
             isNullable: false,
           },
         ],
@@ -61,6 +61,6 @@ export class CreateWorkedDateTable1656881063999 implements MigrationInterface {
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable("worked_input");
+    await queryRunner.dropTable("worked_date");
   }
 }

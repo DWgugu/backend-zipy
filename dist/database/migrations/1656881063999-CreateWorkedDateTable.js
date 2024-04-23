@@ -9,49 +9,49 @@ class CreateWorkedDateTable1656881063999 {
             columns: [
                 {
                     name: "id",
-                    type: "int",
+                    type: "uuid",
                     isPrimary: true,
                     isGenerated: true,
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "piece_value",
                     type: "decimal",
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "quantity",
                     type: "int",
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "date",
                     type: "date",
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "service_id",
                     type: "int",
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "client_input_id",
-                    type: 'int',
-                    isNullable: false
-                }
+                    type: "int",
+                    isNullable: false,
+                },
             ],
             foreignKeys: [
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
                     referencedTableName: "service",
-                    columnNames: ["service_id"]
+                    columnNames: ["service_id"],
                 }),
                 new typeorm_1.TableForeignKey({
                     referencedColumnNames: ["id"],
                     referencedTableName: "client_input",
-                    columnNames: ["client_input_id"]
-                })
-            ]
+                    columnNames: ["client_input_id"],
+                }),
+            ],
         }));
     }
     async down(queryRunner) {

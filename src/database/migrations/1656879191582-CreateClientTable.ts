@@ -8,7 +8,7 @@ export class CreateClientTable1656879191582 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "uuid",
+            type: "int",
             isPrimary: true,
             isGenerated: true,
             isNullable: false,

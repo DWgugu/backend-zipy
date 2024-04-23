@@ -13,24 +13,24 @@ export class CreateClientInputTable1656880596763 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "uuid",
+            type: "int",
             isPrimary: true,
             isGenerated: true,
             isNullable: false,
           },
           {
             name: "cut_date_id",
-            type: "int",
+            type: "uuid",
             isNullable: false,
           },
           {
             name: "client_id",
-            type: "int",
+            type: "uuid",
             isNullable: false,
           },
           {
             name: "user_id",
-            type: "int",
+            type: "uuid",
             isNullable: false,
           },
         ],

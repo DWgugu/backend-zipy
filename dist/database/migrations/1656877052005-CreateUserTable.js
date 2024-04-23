@@ -5,28 +5,28 @@ const typeorm_1 = require("typeorm");
 class CreateUserTable1656877052005 {
     async up(queryRunner) {
         await queryRunner.createTable(new typeorm_1.Table({
-            name: 'users',
+            name: "users",
             columns: [
                 {
                     name: "id",
-                    type: "int",
+                    type: "uuid",
                     isPrimary: true,
                     isGenerated: true,
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "users",
                     type: "varchar",
                     length: "100",
-                    isNullable: false
+                    isNullable: false,
                 },
                 {
                     name: "password",
                     type: "varchar",
                     length: "255",
-                    isNullable: false
-                }
-            ]
+                    isNullable: false,
+                },
+            ],
         }));
     }
     async down(queryRunner) {
